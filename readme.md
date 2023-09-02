@@ -6,7 +6,8 @@
 
 <img src="screenshot.png" width="50%" />
 
-Temporary boilerplate code, and library setup using cmake and vcpkg
+A quick reference for SDL_gpu boilerplate code, and library setup using cmake and vcpkg.
+It includes compatibility for web builds via Emscripten.
 
 ## Getting Started
 
@@ -52,6 +53,23 @@ cmake --build build -t sdlgpu-template
 
 If all goes well, when you run the built project file in the build folder via `./build/sdlgpu-template`, the above screen should appear!
 
+### Emscripten Builds
+
+#### 1. Clone and initialize emsdk on your local system
+
+#### 2. Set environment variable `EMSDK` to the emsdk repo's root directory
+
+#### 3. Add the following flags to the cmake build command:
+```
+-DCMAKE_TOOLCHAIN_FILE=<path-to-vcpkg>/scripts/buildsystems/vcpkg.cmake
+-DVCPKG_FEATURE_FLAGS="--manifests"
+-DVCPKG_TARGET_TRIPLET=wasm32-emscripten
+-DVCPKG_CHAINLOAD_TOOLCHAIN_FILE=<path-to-emsdk>/upstream/emscripten/cmake/Modules/Platform/Emscripten.cmake
+```
+Notes: 
+- Please make sure to change `<path-to-vcpkg>` and `<path-to-emsdk>` to the locations on your system.
+- It should build, but you may need to check the vcpkg and emscripten docs for further issues. 
+  - Emscripten ports on vcpkg are run by the community and may need further investigation if a package is not building
 
 ## How to use
 
