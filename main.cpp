@@ -1,8 +1,7 @@
-#include <iostream>
 #include <entt/entt.hpp>
 #include <SDL2/SDL.h>
 #include <spdlog/spdlog.h>
-#include "lib/sdl-gpu/include/SDL_gpu.h"
+#include <SDL_gpu.h>
 
 const int SCREEN_WIDTH = 640;
 const int SCREEN_HEIGHT = 480;
@@ -102,6 +101,9 @@ int main()
 
         GPU_Flip(window);
     }
+
+    GPU_FreeTarget(window);
+    GPU_Quit();
 
     return 0;
 }
