@@ -37,7 +37,7 @@ cmake build -S . -DCMAKE_TOOLCHAIN_FILE=<vcpkg-root>/scripts/buildsystems/vcpkg.
 
 Notes: 
 - In CLion, you'll just need to add the `-D` flags above to the CMake options in the CMake profile settings.
-- <vcpkg-root> should be replaced by the actual path to the vcpkg repo on your system
+- \<vcpkg-root\> should be replaced by the actual path to the vcpkg repo on your system
 
 #### 3. Build the project
 
