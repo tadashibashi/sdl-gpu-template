@@ -1,0 +1,6 @@
+[submodule "lib/sdl-gpu"]
+	path = lib/sdl-gpu
+	url = https://github.com/tadashibashi/sdl-gpu
+[submodule "lib/vcpkg"]
+	path = lib/vcpkg
+	url = https://github.com/microsoft/vcpkg

@@ -1,0 +1,11 @@
+{
+  "name": "vcpkg-test",
+  "version-string":  "0.0.1",
+  "dependencies": [
+    "entt",
+    "sdl2",
+    "glm",
+    "opengl",
+    "spdlog"
+  ]
+}
