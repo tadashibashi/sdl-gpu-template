@@ -1,5 +1,9 @@
 # SDL Gpu Template
 
+![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![CMake](https://img.shields.io/badge/CMake-%23008FBA.svg?style=for-the-badge&logo=cmake&logoColor=white)
+![Vcpkg](https://img.shields.io/badge/VCPKG-yellow?style=for-the-badge)
+
 <img src="screenshot.png" width="50%" />
 
 Temporary boilerplate code, and library setup using cmake and vcpkg
@@ -8,6 +12,7 @@ Temporary boilerplate code, and library setup using cmake and vcpkg
 
 ### Requirements:
 - cmake install
+- vcpkg install
 
 ### Steps
 
