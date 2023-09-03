@@ -62,6 +62,8 @@ Notes:
 - Please make sure to change `<path-to-vcpkg>` and `<path-to-emsdk>` to the locations on your system.
 - It should build, but you may need to check the vcpkg and emscripten docs for further issues. 
   - Emscripten ports on vcpkg are run by the community and may need further investigation if a package is not building
+- For some reason, a bug occurs if you don't manually add the VCPKG_CHAINLOAD_TOOLCHAIN_FILE to the command even though
+  it finds it via the target triplet file. 
 
 ## How to use
 
