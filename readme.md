@@ -23,14 +23,6 @@ It includes compatibility for web builds via Emscripten.
 git clone --recursive https://github.com/tadashibashi/sdlgpu-template
 ```
 
-#### 2. Initialize vcpkg
-Mac & Linux
-```
-./lib/vcpkg/bootstrap-vcpkg.sh
-```
-
-On Windows, use the .bat of the same file
-
 #### 2. Run CMake with VCPKG toolchain file
 
 ```shell
